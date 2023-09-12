@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(mine.jpg);
+        }
+        ul{
+            padding: 0px;
+            margin: 0px;
+            border: none;
+            outline: none;
+            list-style: none;
+            margin-top: -20px;
+        }
+        ul li{
+            background-color: rgb(26, 81, 59);
+            float: left;
+            height: 30px;
+            width: 300px;
+            line-height: 30px;
+            font-size: 22px;
+            text-align: center;
+            margin-left: 7px;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            cursor: pointer;
+        }
+        ul li a:hover{
+            background-color: blue;
+        }
+        ul li ul li{
+            opacity: .6;
+            display: none;
+        }
+        ul li:hover ul li{
+            display: block;
+            cursor: pointer;
+            font-size: 19px;
+            height: 28px;
+        }
+        p{
+            font-size: 30px;
+            color: white;
+            background-color: transparent;
+        }
+        makeup{
+            margin-top: -10px;
+        }
+        .marquee{
+            height: 100px;
+            width: 100px;
+        }
+        .container1{
+            margin-top: 20px;
+            position: fixed;
+        }
+        .Record{
+            display: grid;
+            grid-template-columns: 350px 350px 1fr;
+            column-gap: 30px;
+        }
+        form{
+            border: 3px white solid;
+            background-color: transparent;
+        }
+        h4{
+            margin-left: 15px;
+            text-align: start;
+            color: rgb(249, 243, 243);
+            margin-top: 0px;
+        }
+        p{
+            margin-left: 800px;
+            text-align: start;
+            letter-spacing: 0.15em;
+            color: aliceblue;
+        }
+        input{
+            margin-left: 15px;
+            border-radius: 10px;
+            height: 25px;
+            width: 280px;
+            text-align: center;
+            border: none;
+            outline: none;
+        }
+        section{
+            background-color: transparent;
+            border: 3px white solid;
+            width: 310px;
+        }
+        .button{
+            width: 130px;
+            height: 35px;
+            margin-top: 30px;
+            color: rgb(145, 5, 5);
+            font-weight: 900;
+            border: 2px brown solid;
+            cursor: pointer;
+        }
+        .button:hover{
+            opacity: .6;
+        }
+        .button:active{
+            opacity: .9;
+        }
+        img{
+            width: 90px;
+        }
+        .first{
+            display: grid;
+            grid-template-rows: 100px 100px 1fr;
+            row-gap: 20px   ;
+        }
+        .P1{
+            margin-left: -200px;
+        }
+        .Marks{
+            width: 500px;
+            height: 200px;
+        }
+        .wow{
+            margin-bottom: 5px;
+        }
+        .tr1{
+            color: white;
+            text-align: center;
+        }
+        fieldset{
+            border: 3px white solid;
+            color: white;
+        }
+    </style>
+    <script>
+        function TotalCw(){
+          var Assi1=document.form1.Ass1.value;
+          var Assi2=document.form1.Ass2.value;
+          var Cati1=document.form1.Cat1.value;
+          var Cati2=document.form1.Cat2.value
+          var TotCwi=Assi1+Assi2+Cati1+Cati2;
+          document.form1.TotCw.value=TotCwi;
+        }
+      </script>
+</head>
+<body>
+<div class="container1">
+    <ul>
+        <li><a>HOME</a>
+            <ul>
+                <li><li><a href="login.html">Mis</a></li>
+                <li><li><a>Tel &nbsp;&nbsp;0789559374</a></li>
+                <li><li><a>Email:nexon0321@gmail.com</a></li>
+            </ul>
+        </li>
+        <li><a>About</a>
+            <ul>
+                <li><li><a>Tel &nbsp;&nbsp;0789559374</a></li>
+                <li><li><a>Email:nexon0321@gmail.com</a></li>
+            </ul>
+        </li>
+        <li><a>School</a>
+            <ul>
+                <li><li><a href="login.html">ComputerScience and IT</a></li>
+                <li><li><a>Business and Economic</a></li>
+                <li><li><a>Low</a></li>
+            </ul>
+        </li>
+        <li><a>Session</a>
+            <ul>
+                <li><li><a>Day</a></li>
+                <li><li><a>Evening</a></li>
+                <li><li><a>Weekend</a></li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <br>
+
+    <div class="Record">
+        <div class="first">
+        <fieldset>
+            <legend>Record School Info</legend>
+        <input type="search" name="Select" placeholder="Select your School">
+        </fieldset>
+    <form>
+        <h4>Record Depertment Info</h4>
+        <input type="search" name="Select" placeholder="Select your Depertment">
+    </form>
+    <form>
+        <h4>Record Student Info</h4>
+        <input class="wow" type="text" name="stname" placeholder="Student name"><br>
+        <input class="wow" type="text" name="steg" placeholder="Student Reg"><br>
+        <input class="wow" type="search" name="Select" placeholder="Select your Section"><br>
+        <input class="wow" type="search" name="Select" placeholder="Select year of Study"><br>
+        <input class="wow" type="search" name="Select" placeholder="Select year of Study"><br>
+        <input class="wow" type="text" name="Schoolid" placeholder="School Id"><br>
+        <input class="wow" type="text" name="Dep" placeholder="Depertment Id">
+    </form>
+    </div>
+    <form name="form1">
+        <h4>Record Student Marks</h4>
+        <input class="wow" type="text" name="Module" placeholder="Modulename">
+        <input class="wow" type="text" name="Ass1" placeholder="Ass1">
+        <input class="wow" type="text" name="Ass2" placeholder="Ass2">
+        <input class="wow" type="text" name="Cat1" placeholder="Cat1">
+        <input class="wow" type="text" name="Cat2" placeholder="Cat2">
+        <input class="wow" type="text" name="TotCw" placeholder="Tot Cw">
+        <input class="wow" type="text" name="Fin" placeholder="Fin Ex">
+        <input class="wow" type="text" name="Tot" placeholder="Tot 100">
+        <input class="wow" type="text" name="Grade" placeholder="Grade">
+        <input class="wow" type="text" name="Schoolid" placeholder="School Id">
+        <input class="wow" type="text" name="Deptid" placeholder="Dept Id">
+        <input class="wow" type="text" name="Studentid" placeholder="Student Id"><br>
+        <p class="p1" style="display:name;" name="msgOutput"></p>
+        <div class="buttons">
+            <input class="button" type="button" value="Calculate" onclick="TotalCw()">
+            <input class="button" type="button" value="Save Record" onclick="myFunction()">
+        </div>
+    </form>
+    <form class="Marks" name="form1">
+        <h4>Student Marks</h4>
+        
+        <table>
+           
+        </table>
+    </form>
+    </div>
+
+</div>
+    <div class="makeup">
+        <marquee behavior="" direction=""><p>Class of Monday 24/07/2023</p></marquee>
+    </div>
+</body>
+</html>

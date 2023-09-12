@@ -1,0 +1,185 @@
+body{
+    background-image: url(uok.PNG);
+    background-repeat: no-repeat;
+    background-size: 770px;
+}
+.body1{
+    display: flex;
+}
+.apply{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 150px;
+    height: 80px;
+}
+input{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 430px;
+    border: none;
+    outline: none;
+    height: 45px;
+    color: black;
+}
+.container{
+    padding-top: 50px;
+    margin-left: 775px;
+    position: fixed;
+    height: 400px;
+    margin-top: -25px;
+    width: 450px;
+    border: none;
+    border-radius: 80px;
+
+}
+.button{
+    display: grid;
+    grid-template-columns: 125px 1fr ;
+    margin-left: 0px;
+    column-gap: 120px;
+    height: 150px;
+    width: 500px;
+    margin-top: -28px;
+}
+.checkbox{
+    width: 15px;
+    height: 15px;
+    opacity: .6px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.checkbox:active{
+    color:  rgb(105, 23, 23);
+}
+.checkbox:hover{
+    color:  rgb(105, 23, 23);
+}
+.login{
+    font-weight: 500;
+    font-size: 18px;
+    width: 125px;
+    height: 48px;
+    background-color: rgb(105, 23, 23);
+    color: white;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+}
+.login:hover{
+    opacity: .8;
+}
+.login:active{
+    opacity: .9;
+}
+.fatigue{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    column-gap: 44px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 18px;
+    color:rgb(139, 133, 133);
+}
+.appy{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 85px;
+    cursor: pointer;
+}
+.appy:hover{
+    opacity: .6;
+}
+.appy:active{
+    opacity: .9;
+}
+.logg{
+    width: 85px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    outline: none;
+    border: none;
+    height: 47px;
+    font-size: 20px;
+    letter-spacing: 0.00001em;
+    cursor: pointer;
+    background-color: brown
+}
+.logg:hover{
+    opacity: .6;
+}
+.logg:active{
+    opacity: .9;
+}
+.type1{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(19, 17, 17);
+    letter-spacing: 0.000000001em;
+    border-bottom: 1px rgb(115, 112, 112) solid;
+}
+.type1:active{
+    background-color: rgb(219, 234, 255);
+    border-radius: 7px;
+    transition: 0s;
+    height: 33px;
+    outline: none;
+    border: none;
+}
+.type1:hover{
+    padding-bottom: 3px;
+    background-color: rgb(170, 216, 248);
+}
+.type1:visited{
+    background-color: rgb(219, 234, 255);
+    border-radius: 7px;
+    transition: 0s;
+    height: 33px;
+    outline: none;
+    border: none;
+}
+.password{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(19, 17, 17);
+    letter-spacing: 0.000000001em;
+}
+.forget{
+    padding-top: 18px;
+    color: rgb(139, 133, 133);
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0px;
+    cursor: pointer;
+}
+.apply{
+    margin-left: 675px;
+    margin-top: 90px;
+}
+.password1{
+    color: rgb(30, 28, 28);
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px rgb(115, 112, 112) solid;
+    width: 430px;
+}
+.password1:active{
+    background-color: green;
+    border-radius: 7px;
+    transition: 0s;
+    height: 33px;
+    outline: none;
+    border: none;
+}
+.password1:hover{
+    padding-bottom: 3px;
+    background-color: rgb(170, 216, 248);
+}

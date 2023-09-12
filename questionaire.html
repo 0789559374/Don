@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Chooce</title>
+    <style>
+        body{
+            background-color: rgb(94, 91, 91);
+        }
+        .information{
+            background-color: aqua;
+            height: 500px;
+            width: 400px;
+            text-align: center;
+            margin-left: 30px;
+            position: fixed;
+        }
+        .inputt{
+            width: 350px;
+            height: 35px;
+            margin-bottom: 8px;
+        }
+        .container{
+            display: grid;
+            
+            column-gap: 50px;
+            margin-top: 90px;
+        }
+        .Question{
+            background-color: aquamarine;
+            
+            margin-left: 30px;
+            text-align: center;
+        }
+        button{
+            width: 200px;
+            height: 30px;
+            margin-left: 50px;
+            margin-top: 70px;
+            font-size: 22px;
+            background-color: brown;
+            border-radius: 15px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        .result{
+            width: 250px;
+            height: 40px;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .save{
+            margin-top: 50px;
+        }
+        .formd{
+            background-color: aqua;
+            text-align: center;
+            position: fixed;
+            margin-left: 900px;
+            height: 300px;
+            width: 350px;
+        }
+        marquee{
+            color: white;
+            font-size: 24px;
+            position: fixed;
+            margin-top: -80px;
+        }
+
+
+
+        ul{
+            padding: 0px;
+            margin: 0px;
+            border: none;
+            outline: none;
+            list-style: none;
+            margin-top: -20px;
+        }
+        ul li{
+            background-color: rgb(26, 81, 59);
+            float: left;
+            height: 30px;
+            width: 300px;
+            line-height: 30px;
+            font-size: 22px;
+            text-align: center;
+            margin-left: 7px;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            cursor: pointer;
+        }
+        ul li a:hover{
+            background-color: blue;
+        }
+        ul li ul li{
+            opacity: .6;
+            display: none;
+        }
+        ul li:hover ul li{
+            display: block;
+            cursor: pointer;
+            font-size: 19px;
+            height: 28px;
+        }
+        p{
+            font-size: 30px;
+            color: white;
+            background-color: transparent;
+        }
+        makeup{
+            margin-top: -10px;
+        }
+        .container1{
+            margin-top: 20px;
+            position: fixed;
+        }
+        .Record{
+            display: grid;
+            grid-template-columns: 350px 350px 1fr;
+            column-gap: 30px;
+        }
+        form{
+            border: 3px white solid;
+            background-color: transparent;
+        }
+        h4{
+            margin-left: 15px;
+            text-align: start;
+            color: rgb(249, 243, 243);
+            margin-top: 0px;
+        }
+        section{
+            background-color: transparent;
+            border: 3px white solid;
+            width: 310px;
+        }
+        .first{
+            display: grid;
+            grid-template-rows: 100px 100px 1fr;
+            row-gap: 20px   ;
+        }
+        .wow{
+            margin-bottom: 5px;
+        }
+        .tr1{
+            color: white;
+            text-align: center;
+        }
+        fieldset{
+            border: 3px white solid;
+            color: white;
+        }
+
+    </style>
+    <script>
+        function correct_answer(){
+            var wrong1 = document.formc.r1.value;
+            var wrong2=document.formc.r1.value;
+            var corr1=document.formc.r1.value;
+            if(wrong1 == "w1"){
+                alert("Wrong");
+            }
+            else
+                if(wrong2 == "w2")
+            {
+                alert("Wrong");  
+            }
+            if(corr1 == "c1"){
+                alert("correct");
+            }
+        }
+
+        function Marks(){
+            var answer1 = document.formc.r1.value;
+            var answer2 = document.formc.r2.value;
+            var answer3 = document.formc.r3.value;
+            var answer4 = document.formc.r4.value;
+            var answer5 = document.formc.r5.value;
+            var answer6 = document.formc.r6.value;
+            var answer7 = document.formc.r7.value;
+            var answer8 = document.formc.r8.value;
+            var answer9 = document.formc.r9.value;
+            var answer10 = document.formc.r10.value;
+            var answer11 = document.formc.r11.value;
+            var answer12 = document.formc.r12.value;
+            var answer13 = document.formc.r13.value;
+            var answer14 = document.formc.r14.value;
+            var answer15 = document.formc.r15.value;
+            var answer16 = document.formc.r16.value;
+            var answer17 = document.formc.r17.value;
+            var answer18 = document.formc.r18.value;
+            var answer19 = document.formc.r19.value;
+            var answer20 = document.formc.r20.value;
+
+            var total = 0;
+
+            if(answer1 == "c1"){
+                total = total + 5;
+            }
+            if(answer2 == "cr1"){
+                total = total + 5;
+            }
+            if(answer3 == "cor1"){
+                total = total + 5;
+            }
+        
+            if(answer4 == "cor1"){
+                total = total + 5;
+            }
+            if(answer5 == "cor1"){
+                total = total + 5;
+            }
+            if(answer6 == "cor1"){
+                total = total + 5;
+            }
+            if(answer7 == "cor1"){
+                total = total + 5;
+            }
+            if(answer8 == "cor1"){
+                total = total + 5;
+            }
+            if(answer9 == "cor1"){
+                total = total + 5;
+            }
+            if(answer10 == "cor1"){
+                total = total + 5;
+            }
+            if(answer11 == "cor1"){
+                total = total + 5;
+            }
+            if(answer12 == "cor1"){
+                total = total + 5;
+            }
+            if(answer13 == "cor1"){
+                total = total + 5;
+            }
+            if(answer14 == "cor1"){
+                total = total + 5;
+            }
+            if(answer15 == "cor1"){
+                total = total + 5;
+            }
+            if(answer16 == "cor1"){
+                total = total + 5;
+            }
+            if(answer17 == "cor1"){
+                total = total + 5;
+            }
+            if(answer18 == "cor1"){
+                total = total + 5;
+            }
+            if(answer19 == "cor1"){
+                total = total + 5;
+            }
+            if(answer20 == "cor1"){
+                total = total + 5;
+            }
+
+            alert("Do you want to Submit?");
+            document.formd.marks.value = total +"/100" +"Marks" +"Pass";
+
+        }
+        function St_information(){
+            let x = document.getElementById('fname').value;
+            let y = document.getElementById('lname').value;
+            let z = document.getElementById('regnumber').value;
+            let w=x + " " +y + " " +z;
+            const output = document.getElementById('Information');
+            output.style.display = 'block';
+            output.innerHTML = w;
+        }
+    </script>
+</head>
+<body>
+    <div class="container1">
+        <ul>
+            <li><a>HOME</a>
+                <ul>
+                    <li><li><a href="login.html">Mis</a></li>
+                    <li><li><a>Tel &nbsp;&nbsp;0789559374</a></li>
+                    <li><li><a>Email:nexon0321@gmail.com</a></li>
+                </ul>
+            </li>
+            <li><a>About</a>
+                <ul>
+                    <li><li><a>Tel &nbsp;&nbsp;0789559374</a></li>
+                    <li><li><a>Email:nexon0321@gmail.com</a></li>
+                </ul>
+            </li>
+            <li><a>School</a>
+                <ul>
+                    <li><li><a href="login.html">ComputerScience and IT</a></li>
+                    <li><li><a>Business and Economic</a></li>
+                    <li><li><a>Low</a></li>
+                </ul>
+            </li>
+            <li><a>Session</a>
+                <ul>
+                    <li><li><a>Day</a></li>
+                    <li><li><a>Evening</a></li>
+                    <li><li><a>Weekend</a></li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <br>
+    <marquee behavior="" direction="">Email:&nbsp;&nbsp;nexon@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;tel:&nbsp;0789559374</marquee>
+    <div class="container">
+        <div class="information">
+            <form class="forma" action="" name="forma">
+                <h2>Fill your Names</h2>
+                <input class="inputt" type="text" id="fname" placeholder="First name"><br>
+                <input class="inputt" type="text" id="lname" placeholder="Last name"><br>
+                <input class="inputt" type="text" id="regnumber" placeholder="Reg number"><br>
+            </form>
+        <div class="accademic">
+            <form action="" name="formb">
+                <h2>Chooce your School</h2>
+                <label><input type="radio" name="School" id="Schl">BBIT</label><br>
+                <label><input type="radio" name="School" id="Schol">BIT</label><br>
+                <label><input type="radio" name="School" id="School">BCS</label><br>
+            </form>
+            <button onclick="return St_information();" name="result">Save</button>
+            </div>
+        </div>
+        <div class="Question">
+            <form action="" name="formc">
+                <h2>Answer the Question Below</h2>
+                <p>Q1.What is html in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r1" value="w1">Hypper text makeup language <br>
+                <input type="radio" name="r1" value="w2">Hypper text make language <br>
+                <input type="radio" name="r1" value="c1">Hypper text markeup language <br>
+    
+                <p>Q2.What is CSS in full  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r2" value="wr1">Cascade style  <br>
+                <input type="radio" name="r2" value="wr2">Cascade sheetstyle  <br>
+                <input type="radio" name="r2" value="cr1">Cascade Sytlesheet <br>
+    
+                <p>Q3.what are types of CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r3" value="wor1">International, local, internet  <br>
+                <input type="radio" name="r3" value="cor1">Global,Local,Internal  <br>
+                <input type="radio" name="r3" value="wor2">Global, International, Internal  <br>
+
+                <p>Q4.what is Wi-fi in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r4" value="wor1">Wireless fiderite internet <br>
+                <input type="radio" name="r4" value="cor1">Wireless fiderity  <br>
+                <input type="radio" name="r4" value="wor2">Wireless fiderite  <br>
+
+                <p>Q5.what is DP in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r5" value="wor1">Display Picture <br>
+                <input type="radio" name="r5" value="cor1">Display Photo  <br>
+                <input type="radio" name="r5" value="wor2">Disk Post  <br>
+
+                <p>Q6.what is PDF in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r6" value="cor1">Portable Document Formate <br>
+                <input type="radio" name="r6" value="wor1">Post Document Form  <br>
+                <input type="radio" name="r6" value="wor2">Both are correct  <br>
+
+                <p>Q7.what is USB in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r7" value="wor1">University Serial Busy <br>
+                <input type="radio" name="r7" value="wor2">Universal Serial Bus  <br>
+                <input type="radio" name="r7" value="cor1">Universal Serial Busy  <br>
+
+                <p>Q8.what is GPRS in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r8" value="wor1">General Packed Real Service <br>
+                <input type="radio" name="r8" value="cor1">General Packed Radio Service  <br>
+                <input type="radio" name="r8" value="wor2">Great Packed Radio System <br>
+
+                <p>Q9.what is ATM in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r9" value="wor1">Access Teller Machine <br>
+                <input type="radio" name="r9" value="cor1">Autometed Teller Machine  <br>
+                <input type="radio" name="r9" value="wor2">Automatic Teller Machine  <br>
+
+                <p>Q10.what is GPS in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r10" value="wor1">Grobal personal Service <br>
+                <input type="radio" name="r10" value="cor1">Grobal Positioning System  <br>
+                <input type="radio" name="r10" value="wor2">All above are correct  <br>
+
+                <p>Q11.what is DVD in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r11" value="wor1">Digital visual Driver <br>
+                <input type="radio" name="r11" value="wor2">Digital very Driver  <br>
+                <input type="radio" name="r11" value="cor1">None above is correct  <br>
+
+                <p>Q12.what is EBM in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r12" value="wor1">Electron Best Magnet <br>
+                <input type="radio" name="r12" value="cor1">Electronic Billing Machine  <br>
+                <input type="radio" name="r12" value="wor2">none obove is correct  <br>
+
+                <p>Q13.what is CD in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r13" value="wor1">computer Driver <br>
+                <input type="radio" name="r13" value="cor1">Compact Disk  <br>
+                <input type="radio" name="r13" value="wor2">Compact Driver  <br>
+
+                <p>Q14.what is RRA in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r14" value="cor1">Rwanda Revenue Authority <br>
+                <input type="radio" name="r14" value="wor1">Rwanda Reverse Autority  <br>
+                <input type="radio" name="r14" value="wor2">Rwanda Recycle Agance  <br>
+
+                <p>Q15.what is RDB in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r15" value="wor1">Rwanda Development bereaul <br>
+                <input type="radio" name="r15" value="wor2">Rwanda Displine Bord  <br>
+                <input type="radio" name="r15" value="cor1">Rwanda Development Bord  <br>
+
+                <p>Q16.what is FBI in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r16" value="cor1">Federal Bereaul of investigation <br>
+                <input type="radio" name="r16" value="wor1">Fidelity bord international <br>
+                <input type="radio" name="r16" value="wor2">all above is correct <br>
+
+                <p>Q17.what is RIB in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r17" value="wor1">Rwanda Internal Bord <br>
+                <input type="radio" name="r17" value="cor1">Rwanda Investigation Bord  <br>
+                <input type="radio" name="r17" value="wor2">Rwanda investigation Best  <br>
+
+                <p>Q18.what is TTC in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r18" value="wor1">teacher tax center <br>
+                <input type="radio" name="r18" value="cor1">Teacher Training College  <br>
+                <input type="radio" name="r18" value="wor2">Teacher Training Centre  <br>
+
+                <p>Q19.what is REB in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r19" value="cor1">Rwanda Education Bord <br>
+                <input type="radio" name="r19" value="wor1">Rwandan Education Bord  <br>
+                <input type="radio" name="r19" value="wor2">Rwanda english best  <br>
+
+                <p>Q20.what is UN in full &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5Marks</p>
+                <input type="radio" name="r20" value="wor1">Under Nations <br>
+                <input type="radio" name="r20" value="wor1">Union Numbers  <br>
+                <input type="radio" name="r20" value="cor1">United Nations  <br>
+            </form>
+            <button class="save" onclick="return Marks(),St_information(),correct_answer();" name="Save">Submit</button>
+        </div>
+        <form class="formd" action="" name="formd">
+            <h2>Result</h2>
+            <p style="display:name; color: rgb(85, 81, 81); font-size: 20px;" id="Information"></p>
+            <input class="result" type="text" name="marks" placeholder="Result">
+        </form>
+    </div>
+</body>
+</html>

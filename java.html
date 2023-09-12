@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java Script In html</title>
+    <script>
+      function myFunction(){
+        let x = 'My name is ';
+        let y = document.getElementById('fname').value;
+        let u = document.getElementById('sname').value;
+        let t = document.getElementById('regnumber').value;
+        let z = ',I am a student in University of Kigali and I am doing Information Technology for ';
+        let w = 'now we are leaning Internet Programing and Web Optmization ';
+        let v = 'Thank you so much for your atention !'
+        let msg = x+y+u+t+z+w+v;
+        const output = document.getElementById('msgOutput');
+        output.style.display = 'block';
+        output.innerHTML = msg;
+      }
+    </script>
+    <style>
+        body{
+            background-image: url(image.jpg);
+            background-repeat: no-repeat;
+            background-size: 780px;
+            background-color: blanchedalmond;
+        }
+        h1{
+            color: rgb(50, 49, 49);
+            margin-left: 800px;
+            text-align: center;
+            font-style: normal;
+            text-underline-position: below;
+        }
+        h2{
+            margin-left: 800px;
+            text-align: start;
+            color: rgb(86, 31, 31);
+        }
+        ul{
+            margin-left: 800px;
+            font-size: 20px;
+            background-color: rgb(178, 100, 5);
+        }
+        label{
+            margin-left: 800px;
+            font-size: 20px;
+            color: rgb(59, 56, 56);
+            text-align: center;
+            display: inline-flexbox;
+            position: relative;
+        }
+        p{
+            margin-left: 800px;
+            text-align: start;
+            letter-spacing: 0.15em;
+        }
+        input{
+            margin-left: 800px;
+            border-radius: 10px;
+            height: 25px;
+            width: 400px;
+            text-align: center;
+            border: none;
+            outline: none;
+        }
+        .button{
+            width: 150px;
+            height: 35px;
+            margin-top: 20px;
+            color: rgb(145, 5, 5);
+            font-weight: 900;
+            border: 2px brown solid;
+            cursor: pointer;
+        }
+        .button:hover{
+            opacity: .6;
+        }
+        .button:active{
+            opacity: .9;
+        }
+        img{
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    <a href="java.html">Home</a>
+    <a href="login.html" target="_blank">UoK MIS</a>
+    <a href="dbms.html">Sale Managment</a>
+    <a href="SMF.html">Student Marks</a>
+    <marquee><h1>JavaScript Basic Function</h1></marquee>
+    <marquee class="marquee"><img src="mine.jpg"><img src="don.PNG"></marquee>
+    <section>
+        <h2>Notes</h2>
+        <ul>
+            <li>Function name are case sensitive</li>
+            <li>Function are available to be called at a later time</li>
+            <li>Function can run multiple statment</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Sample Function</h2>
+        <label>First name: <input type="text" id="fname"></label>
+        <label>Second name: <input type="text" id="sname"></label>
+        <label>Reg  number: <input type="text" id="regnumber"></label><br>
+        <input class="button" type="button" value="display message" onclick="myFunction()">
+
+
+        <p style="display:name;" id="msgOutput"></p>
+    </section>
+</body>
+</html>

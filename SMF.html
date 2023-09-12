@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks Form</title>
+    <style>
+        body{
+            background-image: url(don.PNG);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            background-color: transparent;
+            height: 550px;
+            width: 450px;
+            margin-left: 450px;
+            text-align: left;
+            border: 5px rgb(15, 244, 244) solid;
+            border-radius: 70px;
+        }
+        .putt2{
+            text-align: center;
+            width: 150px;
+            height: 35px;
+            border-radius: 8px;
+            padding-bottom: 10px;
+            border: none;
+            outline: none;
+            margin-left: 80px;
+            background-color: transparent;
+        }
+        .putt1{
+            text-align: center;
+            width: 150px;
+            height: 35px;
+            border-radius: 8px;
+            padding-bottom: 10px;
+            border: none;
+            outline: none;
+            margin-left: 10px;
+            background-color: transparent;
+        }
+        input:hover{
+            background-color: rgb(11, 250, 250);
+            height: 38px;
+        }
+        button{
+            text-align: center;
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: aqua;
+            cursor: pointer; 
+            margin-top: 20px;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            outline: none;
+            border: none;
+            margin-left: 125px;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+        button:active{
+            opacity: .8;
+        }
+        .putt{
+            margin-bottom: 8px;
+        }
+        label{
+            text-align: start;
+            margin-left: 50px;
+            font-size: 18px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2  {
+            margin-left: 120px;
+        }
+    </style>
+
+    <script>
+        function max_min()
+        {
+            var nb1=document.don.nbr1.value;
+            var nb2=document.don.nbr2.value;
+            var nb3=document.don.nbr3.value;
+            if(nb1>nb2 & nb2>nb3)
+            {
+                document.don.max.value = nb1;
+                document.don.min.value = nb3;
+            }
+            else if(nb1<nb2 & nb2<nb3)
+            {
+                document.don.max.value = nb3;
+                document.don.min.value = nb1;
+            }
+            else if(nb1<nb2 & nb2>nb3)
+            {
+                document.don.max.value = nb3;
+                document.don.min.value = nb1;
+            }
+        }
+        function avgs()
+        {
+            var nb1=parseInt(document.don.nbr1.value);//assign value to variable
+            var nb2=parseInt(document.don.nbr2.value);
+            var nb3=parseInt(document.don.nbr3.value);//converting value to
+            var avge=(nb1+nb2+nb3)/3;
+            document.don.avg.value=avge;
+        }
+        function percs()
+        {
+            var avge=parseInt(document.don.avg.value);
+            var Percentage=(avge*100)/130;
+            document.don.perc.value=Percentage +"%";
+        }
+    </script>
+</head>
+<body>
+    <a href="java.html">Home</a>
+    <a href="login.html" target="_blank">UoK MIS</a>
+    <a href="dbms.html">Sale Managment</a>
+    <div class="container">
+        <form action=""name="don">
+            <h2>Student Marks Form</h2>
+            <label>Number 1 <input class="putt2" type="text" name="nbr1" placeholder="Number 1"></label><br>
+            <label>Number 2 <input class="putt2" type="text" name="nbr2" placeholder="Number 2"></label><br>
+            <label>Number 3 <input class="putt2" type="text" name="nbr3" placeholder="Number 3"></label><br>           
+            <label>Maximum number <input class="putt1" type="text" name="max" placeholder="Max Number"></label><br>
+            <label>Minmum number <input class="putt1" type="text" name="min" placeholder="Min Number"></label><br>
+            <label>Average <input class="putt2" type="text" name="avg" placeholder="Average"></label><br>
+            <label>Percentage <input class="putt2" type="text" name="perc" placeholder="Percentage"></label>
+        </form>
+        <button onclick="return max_min(),avgs(),percs();">Calculate</button>
+    </div>
+</body>
+</html>

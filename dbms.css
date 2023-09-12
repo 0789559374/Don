@@ -1,0 +1,91 @@
+body{
+    background-image: url(mine.jpg);
+}
+.container{
+    position: relative;
+    background-color: gray;
+    border: 2px rgb(253, 247, 247) solid;
+    width: 350px;
+    height: 500px;
+    margin-left: 450px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 800;
+    padding-top: 10px;
+    margin-top: 20px;
+    
+}
+form{
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.legend{
+    color: rgb(11, 229, 237);
+    margin-bottom: 30px;
+}
+.calculation{
+    margin-top: 20px;
+    width: 150;
+    height: 45px;
+    font-size: 24px;
+    background-color: cadetblue;
+    font-weight: 900;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.calculation:hover{
+    opacity: .6;
+}
+.calculation:active{
+    opacity: .9;
+}
+.Details{
+    font-size: 24px;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+.submit{
+    margin-top: 20px;
+    width: 150px;
+    height: 45px;
+    font-size: 24px;
+    font-weight: 900;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(174, 124, 5);
+    cursor: pointer;
+}
+.submit:hover{
+    opacity: .6;
+}
+.submit:active{
+    opacity: .9;
+}
+a{
+    background-color: bisque;
+    font-size: 24px;
+    text-decoration-color: black;
+    text-decoration-line: none;
+}
+a:hover{
+    opacity: .8px;
+}
+h1{
+    margin-top: 5px;
+}
+.links{
+    display: grid;
+    grid-template-columns: 150px 150px 250px;
+    column-gap: 20px;
+    height: 45px;
+    text-align: center;
+    margin-left: 50px;
+}

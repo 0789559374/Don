@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--var pu=document.form1.pu.value;
+        var qt=document.form1.qt.value;
+        var tot_amount=pu*qt;
+        document.form1.tot.value="$"+tot_amount;
+    
+    
+    
+    let pu = document.getElementsById('pu').value;
+        let qt = document.getElementsById('qt').value;
+        let tot = pu*qt;
+        const output = document.getElementsById('tot');
+        document.form1.tot.value="$"+tot-->
+<head>
+    <title>Customer Portal</title>
+    <link rel="stylesheet" href="dbms.css">
+</head>
+<script>
+    function Calculate_totalamount()
+    {
+        var pu=document.form1.pu.value;
+        var qt=document.form1.qt.value;
+        var tot=document.form1.tot.value;
+        var tot=pu*qt;
+        document.form1.tot.value="$"+tot; 
+    }
+    function Saved()
+    {
+        let tot=document.form1.tot.value;
+        let pu=document.form1.pu.value;
+        let qt=document.form1.qt.value;
+        let submit=tot;
+        const output = document.getElementById('msgOutput');
+        output.style.display = 'block';
+        output.innerHTML=submit;
+    }
+</script>
+<body>
+    <div class="links">
+    <a href="java.html">Home</a>
+    <a href="login.html" target="_blank">UoK MIS</a>
+    <a href="SMF.html">Student Marks</a>
+    </div>
+    <section>
+        <div class="container">
+            <h2 class="legend">Sale managment systems</h2>
+            <form action="" name="form1">
+            <div class="">
+                <input class="Details" type="text" placeholder="Customer_id"name="customer_id"><br>
+                <input class="Details" type="text" placeholder="Customer_name"name="customer_name"><br>
+                <input class="Details" type="text" placeholder="Product_name"><br>
+                <input class="Details" type="text" placeholder="Order_id"><br>
+                <input class="Details" type="text" placeholder="Price Unit" name="pu"><br>
+                <input class="Details" type="text" placeholder="Quantity" name="qt"><br>
+                <input class="Details" type="text" placeholder="Total Amount" name="tot">
+            </div>
+    </form>
+    <button onclick="return Calculate_totalamount();" name="calc" class="calculation">Calculate</button>
+    <input onclick="return Saved();" class="submit" type="submit" placeholder="submit">
+    </div>
+    <h1 style="display: name;" id="msgOutput"></h1>
+    </section>
+</body>
+</html>

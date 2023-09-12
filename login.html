@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function Showpassword()
+        {
+            var pwd=document.form1.pswd
+            if(pwd.type=="password")
+            {
+                pwd.type="text";
+            }
+            else{
+                pwd.type="password";
+            }
+        }
+    </script>
+    <!--margin-left: 775px;-->
+    <title>UOK-IUMS | Welcome to University of Kigali</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <a href="dbms.html">Sale Managment</a>
+    <a href="SMF.html">Student Marks</a>
+    <div class="body1">
+    </div>
+    <div class="apply">
+        <button class="logg">
+            LogIn
+        </button>
+        <button class="appy">
+            Apply
+        </button>
+    </div>
+    <div class="container">
+        <form action="" name="form1">
+            <input class="type1" type="text" name="" placeholder="Email Address or Reg Number" required><br>
+            <div class="password">
+                <input class="password1" type="Password" name="pswd" placeholder="Password">
+                <p class="forget">Forget Password</p><br>
+            </div>
+            <div class="Showpassword">
+                <p>Show/Hide</p>
+                <input class="checkbox" type="checkbox" name="check" onclick="Showpassword();">
+            </div>
+            <div class="button">
+                <!--<button class="login">Log in</button>-->
+                <a href="dropmenu.html"><input class="login"type="submit" value="Log in"></a>
+                <div class="fatigue">
+                    <input class="checkbox" type="checkbox">
+                    <p class="Keepp">Keep me Login</p>
+                </div>
+             </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
